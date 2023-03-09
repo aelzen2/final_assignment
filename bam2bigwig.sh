@@ -12,7 +12,7 @@ conda activate bam2bigwig
 mamba install samtools
 
 for f in ${input_files[@]};do
-samtools index $f $f".bai"
+samtools index $f $f".bai";
 done"
 
 input_files_indexed=$(ls ${input_files}/*.bai)
